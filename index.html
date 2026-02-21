@@ -1,178 +1,119 @@
-<!-- index.html (Tailwind removed, same design) -->
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Siva Suriyan | Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <!-- Header -->
-    <header class="header">
-      <div class="container nav">
-        <h1 class="logo">Siva Suriyan M S</h1>
-        <nav class="nav-links">
-          <b>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#education">Education</a>
-            <a href="#contact">Contact</a>
-          </b>
-        </nav>
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Siva Suriyan | Frontend Developer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-    <!-- Hero -->
-    <section class="hero">
-      <div class="container center">
-        <h2 class="hero-title">Frontend / MERN Stack Developer</h2>
-        <p class="hero-sub">
-          Responsive Design, MongoDB, Express JS, React JS, Node JS.
-        </p>
-      </div>
-    </section>
-
-    <!-- About -->
-    <section id="about" class="section">
-      <div class="container">
-        <h3 class="section-title">Career Objective</h3>
-        <p class="muted">
-          A Computer Science graduate with hands-on experience gained through
-          projects using React, Node.js, and MongoDB. Passionate about
-          continuous learning and applying my skills in real-world applications.
-        </p>
-      </div>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills" class="section white">
-      <div class="container">
-        <h3 class="section-title">Key Competencies</h3>
-        <div class="grid four">
-          <div class="card soft">
-            <h4>Web Technology</h4>
-            <ul class="muted">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-            </ul>
-          </div>
-          <div class="card soft">
-            <h4>Database</h4>
-            <ul class="muted">
-              <li>Oracle</li>
-              <li>MongoDB</li>
-            </ul>
-          </div>
-          <div class="card soft">
-            <h4>Framework</h4>
-            <ul class="muted">
-              <li>React JS</li>
-              <li>Bootstrap</li>
-            </ul>
-          </div>
-          <div class="card soft">
-            <h4>Version Control</h4>
-            <ul class="muted">
-              <li>Git</li>
-              <li>GitHub</li>
-            </ul>
-          </div>
-        </div>
-
-        <h3 class="section-title mt-lg">Professional Skills</h3>
-        <div class="tags">
-          <span>Multitasking</span>
-          <span>Time Management</span>
-          <span>Decision Making</span>
-          <span>Teamwork</span>
-          <span>Adaptability</span>
-          <span>Willingness to Learn</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects" class="section">
-      <div class="container">
-        <h3 class="section-title">Project Experience</h3>
-        <div class="grid two">
-          <div class="card shadow">
-            <h4>Movie Database Application</h4>
-            <p class="muted small">
-              Built using React functional components, hooks, and React Router
-              for navigation. Integrated TMDB API using Fetch API to display
-              trending movies, details, and search results.
-            </p>
-            <span class="year">2024</span>
-          </div>
-
-          <div class="card shadow">
-            <h4>Mini E-Commerce Website (MERN)</h4>
-            <p class="muted small">
-              Developed a MERN stack e-commerce app with product browsing and
-              cart functionality. Built REST APIs using Express.js and used
-              MongoDB with Mongoose for data management.
-            </p>
-            <span class="year">2024</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Education -->
-
-<section id="education" class="section white">
-  <div class="container">
-    <h3 class="section-title">Education</h3>
-    <ul class="list muted">
-      <li><strong>B.E - CSE</strong> — Anna University (2023)</li>
-      <li><strong>Diploma - CSE</strong> — Guru Ragavendra (2020)</li>
-      <li><strong>12th (English)</strong> — 2018</li>
-    </ul>
-
-    <h3 class="section-title mt-lg">Certifications</h3>
-    <ul class="list muted">
-      <li>
-        Full Stack Master Development Program — Besant Technology (6 Months)
-      </li>
-      <li>Full Stack Web Development Bootcamp — Udemy (Angela Yu)</li>
-    </ul>
-
-    <!-- 👇 ADD THIS PART -->
-    <h3 class="section-title mt-lg">Certification Gallery</h3>
-
-    <div class="cert-gallery">
-      <div class="cert-card">
-        <img src="besant-cert.jpg" alt="Besant Technology Certificate" />
-      </div> 
-
-      <div class="cert-card">
-        <img src="udemy-cert.jpg" alt="Udemy Certificate" />
-      </div>
-
-      <!-- Add more certificates if needed -->
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav">
+      <h2 class="logo">Siva Suriyan</h2>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
+  </header>
 
-  </div>
-</section>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>Frontend & MERN Stack Developer</h1>
+        <p>
+          Passionate Computer Science graduate building responsive and scalable
+          web applications using modern technologies.
+        </p>
+        <a href="#contact" class="btn">Hire Me</a>
+      </div>
+    </div>
+  </section>
 
-    <!-- Contact -->
-    <section id="contact" class="section">
-      <div class="container">
-        <h3 class="section-title">Contact</h3>
-        <div class="muted">
-          <p>📍 123, Anna Nagar, Melpatti Road, Gudiyattam, Vellore - 632602</p>
-          <p>📧 sivasuriyan1002@gmail.com</p>
-          <p>📞 +91 8122480231</p>
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <p>
+        I am a 2023 Computer Science graduate with hands-on experience in React,
+        Node.js, MongoDB, and modern web technologies. I focus on building clean,
+        responsive and user-friendly applications.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section bg-light">
+    <div class="container">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">HTML</div>
+        <div class="skill-card">CSS</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">React JS</div>
+        <div class="skill-card">Node JS</div>
+        <div class="skill-card">Express JS</div>
+        <div class="skill-card">MongoDB</div>
+        <div class="skill-card">Git & GitHub</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Movie Database App</h3>
+          <p>Built with React and TMDB API. Features search, routing and movie details.</p>
+        </div>
+
+        <div class="project-card">
+          <h3>Mini E-Commerce (MERN)</h3>
+          <p>Full-stack e-commerce application with product listing, cart and REST APIs.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <footer class="footer">© 2026 Siva Suriyan. All rights reserved.</footer>
-  </body>
+  <!-- Certificates -->
+  <section id="certificates" class="section bg-light">
+    <div class="container">
+      <h2 class="section-title">Certifications</h2>
+
+      <div class="cert-grid">
+        <div class="cert-card">
+          <img src="besant-cert.jpg" alt="Besant Certificate">
+        </div>
+
+        <div class="cert-card">
+          <img src="udemy-cert.jpg" alt="Udemy Certificate">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <p>Email: sivasuriyan1002@gmail.com</p>
+      <p>Phone: +91 8122480231</p>
+      <p>Location: Tamil Nadu, India</p>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Siva Suriyan | All Rights Reserved
+  </footer>
+
+</body>
 </html>
-
-
