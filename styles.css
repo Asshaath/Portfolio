@@ -184,7 +184,8 @@ body {
 
 .cert-card img {
   width: 100%;
-  height: auto;
+  height: 240px;        /* Default uniform height */
+  object-fit: cover;    /* Prevent stretching */
   border-radius: 8px;
 }
 
@@ -238,3 +239,4 @@ body {
     font-size: 12px;
   }
 }
+
