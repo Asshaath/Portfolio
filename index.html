@@ -6,383 +6,222 @@
 <title>Siva Suriyan | Portfolio</title>
 
 <style>
-:root{
-  --primary:#84B179;
-  --secondary:#A2CB8B;
-  --light:#C7EABB;
-  --accent:#E8F5BD;
-  --dark:#2F4F3E;
-}
-
 *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  scroll-behavior:smooth;
-  font-family: 'Segoe UI', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
 }
 
 body{
-  background:var(--light);
-  color:var(--dark);
-}
-
-/* NAVBAR */
-nav{
-  position:sticky;
-  top:0;
-  background:rgba(87,106,143,0.95);
-  backdrop-filter:blur(8px);
-  padding:14px 6%;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  z-index:1000;
-}
-
-nav h2{
-  color:#fff;
-  font-size:18px;
-  letter-spacing:1px;
-}
-
-nav ul{
-  display:flex;
-  list-style:none;
-  gap:20px;
-}
-
-nav a{
-  color:#fff;
-  text-decoration:none;
-  font-size:14px;
-  transition:.3s;
-}
-
-nav a:hover{
-  color:var(--accent);
-}
-
-/* HERO */
-
-.hero{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  padding:50px 6%;
-  min-height:85vh;
-  background:linear-gradient(to right, #FFF8DE 60%, #B7BDF7 40%);
-  gap:40px;
-}
-
-.hero-left{
-  flex:1;
-}
-
-.hero-left h1{
-  font-size:36px;
-  margin-bottom:10px;
-}
-
-.hero-left h3{
-  font-weight:400;
-  color:var(--primary);
-  margin-bottom:15px;
-}
-
-.hero-buttons{
-  display:flex;
-  gap:12px;
-  flex-wrap:wrap;
-}
-
-.btn-primary,
-.btn-secondary{
-  padding:10px 18px;
-  border-radius:8px;
-  font-size:14px;
-  text-decoration:none;
-  transition:.3s ease;
-  display:inline-block;
-  text-align:center;
-  min-width:140px;
-}
-
-.btn-primary{
-  background:var(--accent);
-  color:#fff;
-}
-
-.btn-primary:hover{
-  background:var(--primary);
-  transform:translateY(-3px);
-}
-
-.btn-secondary{
-  border:2px solid var(--primary);
-  color:var(--primary);
-}
-
-.btn-secondary:hover{
-  background:var(--primary);
-  color:#fff;
-  transform:translateY(-3px);
-}
-
-.hero-right{
-  flex:1;
-  display:flex;
-  justify-content:center;
-}
-
-.hero-right img{
-  width:260px;
-  height:330px;
-  object-fit:cover;
-  border-radius:15px;
-  box-shadow:0 15px 35px rgba(0,0,0,0.15);
-  transition:.4s ease;
-}
-
-.hero-right img:hover{
-  transform:translateY(-8px) scale(1.03);
-}
-
-/* SECTION */
-section{
-  padding:50px 6%;
-}
-
-section h2{
-  font-size:22px;
-  margin-bottom:25px;
-  position:relative;
-}
-
-section h2::after{
-  content:"";
-  width:40px;
-  height:3px;
-  background:var(--accent);
-  position:absolute;
-  left:0;
-  bottom:-6px;
-}
-
-/* GRID */
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:18px;
-}
-
-/* CARD */
-.card{
-  background:#fff;
-  padding:18px;
-  border-radius:12px;
-  box-shadow:0 8px 20px rgba(0,0,0,0.05);
-  transition:.3s ease;
-  border:1px solid #eee;
-  font-size:14px;
-}
-
-.card:hover{
-  transform:translateY(-6px);
-  box-shadow:0 12px 25px rgba(0,0,0,0.1);
-  border:1px solid var(--secondary);
-}
-
-/* CERTIFICATIONS */
-.cert-container{
-  display:flex;
-  gap:25px;
-  flex-wrap:wrap;
-  margin-bottom:20px;
-}
-
-.cert-container img{
-  border-radius:12px;
-  box-shadow:0 10px 20px rgba(0,0,0,0.08);
-  transition:.3s ease;
-}
-
-.cert-landscape{
-  width:220px;
-  height:150px;
-  object-fit:cover;
-}
-
-.cert-portrait{
-  width:150px;
-  height:220px;
-  object-fit:cover;
-}
-
-.cert-container img:hover{
-  transform:scale(1.05);
-}
-
-/* CONTACT */
-.contact a{
-  display:inline-block;
-  padding:10px 18px;
-  background:var(--accent);
-  color:#fff;
-  text-decoration:none;
-  border-radius:8px;
-  font-size:14px;
-  transition:.3s;
-}
-
-.contact a:hover{
-  background:var(--primary);
-}
-
-/* FOOTER */
-footer{
-  text-align:center;
-  padding:18px;
-  background:var(--primary);
-  color:#fff;
-  font-size:13px;
-  margin-top:30px;
-}
-
-/* RESPONSIVE */
-@media(max-width:900px){
-
-  .hero{
-    flex-direction:column;
-    text-align:center;
-    background:var(--light);
-  }
-
-  .hero-buttons{
+    background:#000;
+    color:#fff;
+    height:100vh;
+    display:flex;
     justify-content:center;
-  }
-
-  .hero-right{
-    margin-top:30px;
-  }
-
-  .hero-right img{
-    width:220px;
-    height:280px;
-  }
+    align-items:center;
 }
 
-@media(max-width:450px){
+/* FIXED SIZE CARD */
+.container{
+    position:relative;
+    width:90%;
+    max-width:600px;
+    height:600px;   /* 🔥 fixed height */
+    background:#111;
+    padding:100px 40px 80px;
+    text-align:center;
+    border:1px solid #333;
+    overflow:hidden; /* prevent stretching */
+}
 
-  .hero-left h1{
-    font-size:26px;
-  }
+/* PROFILE IMAGE */
+.profile-img{
+    position:absolute;
+    top:-60px;
+    left:50%;
+    transform:translateX(-50%);
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    overflow:hidden;
+    border:4px solid #000;
+}
 
-  .hero-left h3{
-    font-size:16px;
-  }
-
-  .btn-primary,
-  .btn-secondary{
+.profile-img img{
     width:100%;
-  }
+    height:100%;
+    object-fit:cover;
+}
+
+/* SECTIONS */
+.section{
+    position:absolute;
+    top:100px;
+    left:0;
+    width:100%;
+    padding:0 40px;
+    opacity:0;
+    transition:0.4s ease;
+}
+
+.section.active{
+    opacity:1;
+}
+
+/* TEXT */
+h1{
+    letter-spacing:2px;
+    margin-bottom:10px;
+}
+
+h2{
+    font-weight:300;
+    margin-bottom:20px;
+    font-size:16px;
+}
+
+p{
+    font-size:14px;
+    line-height:1.6;
+    margin-bottom:15px;
+}
+
+ul{
+    list-style:none;
+}
+
+ul li{
+    margin:6px 0;
+}
+
+/* NAVIGATION */
+.nav-buttons{
+    position:absolute;
+    bottom:20px;
+    right:20px;
+    display:flex;
+    gap:15px;
+}
+
+.nav-buttons button{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    border:none;
+    background:#222;
+    color:#fff;
+    font-size:20px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.nav-buttons button:hover{
+    background:#fff;
+    color:#000;
+}
+
+/* RESUME BUTTON */
+.resume-btn{
+    margin-top:20px;
+    padding:10px 20px;
+    border:1px solid #fff;
+    background:transparent;
+    color:#fff;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.resume-btn:hover{
+    background:#fff;
+    color:#000;
+}
+
+@media(max-width:600px){
+    .container{
+        height:650px;
+    }
 }
 </style>
 </head>
-
 <body>
 
-<nav>
-  <h2>SIVA SURIYAN</h2>
-  <ul>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#education">Education</a></li>
-    <li><a href="#certifications">Certifications</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
+<div class="container">
 
-<section class="hero">
-  <div class="hero-left">
-    <h1>SIVA SURIYAN M S</h1>
-    <h3>Frontend & Backend Developer</h3>
-
-    <div class="hero-buttons">
-      <a href="Siva_suriyan.pdf" download class="btn-primary">
-        Download Resume
-      </a>
-
-      <a href="https://www.linkedin.com/in/siva-suriyan-92a98a379/" 
-         target="_blank" 
-         class="btn-secondary">
-        LinkedIn
-      </a>
+    <div class="profile-img">
+        <img src="profile.jpg" alt="Siva Suriyan">
     </div>
-  </div>
 
-  <div class="hero-right">
-    <img src="my-photo.png" alt="Profile Image">
-  </div>
-</section>
-
-<section id="skills">
-  <h2>Key Competencies</h2>
-  <div class="grid">
-    <div class="card"><strong>Web Technology</strong><br>HTML, CSS, JavaScript</div>
-    <div class="card"><strong>Database</strong><br>Oracle, MongoDB</div>
-    <div class="card"><strong>Framework</strong><br>React JS, Bootstrap</div>
-    <div class="card"><strong>Version Control</strong><br>Git, GitHub</div>
-    <div class="card"><strong>Professional Skills</strong><br>Multitasking, Teamwork, Adaptability</div>
-  </div>
-</section>
-
-<section id="projects">
-  <h2>Projects</h2>
-  <div class="grid">
-    <div class="card">
-      <strong>Movie Database Application</strong><br><br>
-      Built using React with TMDB API integration, routing and dynamic search functionality.
+    <!-- PAGE 1 -->
+    <div class="section active">
+        <h1>SIVA SURIYAN</h1>
+        <h2>Software Developer</h2>
+        <p>2023 graduate with hands-on experience and professional certification.</p>
+        <p><strong>B.E – CSE</strong><br>Anna University – 2023</p>
+        <p><strong>Diploma – CSE</strong><br>Guru Ragavendra – 2020</p>
     </div>
-    <div class="card">
-      <strong>Mini E-Commerce Website (MERN)</strong><br><br>
-      Developed full-stack e-commerce app with REST APIs, MongoDB database and cart system.
+
+    <!-- PAGE 2 -->
+    <div class="section">
+        <h1>Skills</h1>
+        <ul>
+            <li><strong>Web:</strong> HTML, CSS, JavaScript</li>
+            <li><strong>Database:</strong> Oracle, MongoDB</li>
+            <li><strong>Framework:</strong> React JS, Bootstrap</li>
+            <li><strong>Version Control:</strong> Git, GitHub</li>
+        </ul>
     </div>
-  </div>
-</section>
 
-<section id="education">
-  <h2>Education</h2>
-  <div class="grid">
-    <div class="card">B.E - CSE<br>Anna University (2023)</div>
-    <div class="card">Diploma - CSE<br>Guru Ragavendra (2020)</div>
-    <div class="card">12th - English (2018)</div>
-  </div>
-</section>
+    <!-- PAGE 3 -->
+    <div class="section">
+        <h1>Projects</h1>
+        <p><strong>Movie Database Application</strong><br>
+        Built with React, Hooks, React Router & TMDB API integration.</p>
 
-<section id="certifications">
-  <h2>Certifications</h2>
-  <div class="cert-container">
-    <img src="besant-cert.jpg" class="cert-portrait">
-    <img src="udemy-cert.jpg" class="cert-landscape">
-  </div>
-  <p><strong>Full Stack Master Development Program</strong> – Besant Technology</p>
-  <p><strong>Full Stack Web Development Bootcamp</strong> – Udemy (Angela Yu)</p>
-</section>
+        <p><strong>Mini E-Commerce Website (MERN)</strong><br>
+        Developed full-stack app with Express APIs & MongoDB.</p>
+    </div>
 
-<section id="contact" class="contact">
-  <h2>Contact</h2>
-  <a href="https://www.linkedin.com/in/siva-suriyan-92a98a379/" target="_blank">
-    Connect on LinkedIn
-  </a>
-</section>
+    <!-- PAGE 4 -->
+    <div class="section">
+        <h1>Contact</h1>
+        <p>LinkedIn: <a href="#">Your LinkedIn Profile</a></p>
 
-<footer>
-  © 2026 Siva Suriyan M S | All Rights Reserved
-</footer>
+        <a href="Siva_suriyan.pdf" download>
+            <button class="resume-btn">Download Resume</button>
+        </a>
+    </div>
+
+    <div class="nav-buttons">
+        <button onclick="prevSection()"><</button>
+        <button onclick="nextSection()">></button>
+    </div>
+
+</div>
+
+<script>
+const sections = document.querySelectorAll('.section');
+let current = 0;
+
+function showSection(index){
+    sections.forEach((sec,i)=>{
+        sec.classList.remove('active');
+        if(i === index){
+            sec.classList.add('active');
+        }
+    });
+}
+
+function nextSection(){
+    current = (current + 1) % sections.length;
+    showSection(current);
+}
+
+function prevSection(){
+    current = (current - 1 + sections.length) % sections.length;
+    showSection(current);
+}
+</script>
 
 </body>
 </html>
-
-
-
